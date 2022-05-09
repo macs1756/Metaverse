@@ -519,6 +519,7 @@ a {
   .ewolved__btn_btn:after {
     width: 36px;
     height: 36px;
+    min-width: 36px;
     -webkit-animation: pulse_m 2s linear infinite normal 0s forwards;
             animation: pulse_m 2s linear infinite normal 0s forwards;
   }
@@ -526,6 +527,9 @@ a {
 
 .ewolved__btn_btn:before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 66px;
   height: 66px;
   border-radius: 50%;
@@ -579,8 +583,8 @@ a {
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(3);
-            transform: scale(3);
+    -webkit-transform: scale(5);
+            transform: scale(5);
     opacity: 0;
   }
 }
@@ -592,8 +596,8 @@ a {
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(3);
-            transform: scale(3);
+    -webkit-transform: scale(5);
+            transform: scale(5);
     opacity: 0;
   }
 }

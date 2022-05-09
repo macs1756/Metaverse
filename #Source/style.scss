@@ -328,6 +328,7 @@ a{
 		left: 0;
 		width: 66px;
 		height: 66px;
+		
 		border-radius: 50%;
 		display: block;
 		background-color:  transparent;
@@ -337,12 +338,15 @@ a{
 		@media (max-width: $Mb) {
 				width: 36px;
 				height: 36px;
+				min-width: 36px ;
 				animation: pulse_m 2s linear infinite normal 0s forwards;
 		}
 	}
 	&:before{
 		content: "";
-		
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 66px;
 		height: 66px;
 		border-radius: 50%;
@@ -381,7 +385,7 @@ a{
 		}
 	
 		100%{
-				transform: scale(3);
+				transform: scale(5);
 				opacity: 0;
 		}
 }
