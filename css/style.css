@@ -331,6 +331,12 @@ a {
   font-family: "Oxanium";
 }
 
+@media (max-width: 450px) {
+  .header__burger__active {
+    padding: 70px 0 330px 50px;
+  }
+}
+
 .header__burger__active li {
   margin-bottom: 30px;
 }
@@ -375,5 +381,233 @@ a {
   transition: all 2s linear;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.ewolved {
+  padding-bottom: 320px;
+  margin-top: 300px;
+}
+
+@media (max-width: 767px) {
+  .ewolved {
+    margin-top: 270px;
+    padding-bottom: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ewolved {
+    margin-top: 140px;
+    padding-bottom: 175px;
+  }
+}
+
+.ewolved__subtitle {
+  font-size: 27px;
+  opacity: 0.7;
+  letter-spacing: 4px;
+  line-height: 110%;
+  margin-left: 175px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .ewolved__subtitle {
+    font-size: 22px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ewolved__subtitle {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+.ewolved__title {
+  font-weight: 900;
+  line-height: 110%;
+  font-size: 146px;
+  margin-left: 175px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .ewolved__title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ewolved__title {
+    font-size: 80px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ewolved__title {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+.ewolved__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 195px;
+}
+
+@media (max-width: 767px) {
+  .ewolved__btn {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ewolved__btn {
+    padding-left: 20px;
+  }
+}
+
+.ewolved__btn_btn {
+  background-color: green;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 1px solid #fff;
+  background: #000 url(../img/Play-icon.svg) 55% 50% no-repeat;
+  position: relative;
+  z-index: 77;
+}
+
+@media (max-width: 600px) {
+  .ewolved__btn_btn {
+    width: 36px;
+    height: 36px;
+    background-size: 40%;
+  }
+}
+
+.ewolved__btn_btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  border: 1px solid #C5C5C5;
+  z-index: 1;
+  -webkit-animation: pulse 2s linear infinite normal 0s forwards;
+          animation: pulse 2s linear infinite normal 0s forwards;
+}
+
+@media (max-width: 600px) {
+  .ewolved__btn_btn:after {
+    width: 36px;
+    height: 36px;
+    -webkit-animation: pulse_m 2s linear infinite normal 0s forwards;
+            animation: pulse_m 2s linear infinite normal 0s forwards;
+  }
+}
+
+.ewolved__btn_btn:before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  border: 1px solid red;
+  z-index: 1;
+  -webkit-animation: pulse 2s linear infinite normal 1s forwards;
+          animation: pulse 2s linear infinite normal 1s forwards;
+}
+
+@media (max-width: 600px) {
+  .ewolved__btn_btn:before {
+    width: 36px;
+    height: 36px;
+    -webkit-animation: pulse_m 2s linear infinite normal 1s forwards;
+            animation: pulse_m 2s linear infinite normal 1s forwards;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    width: 66px;
+    height: 66px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    width: 66px;
+    height: 66px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse_m {
+  0% {
+    width: 36px;
+    height: 36px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse_m {
+  0% {
+    width: 36px;
+    height: 36px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.ewolved__btn_text {
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 110%;
+  font-size: 22px;
+}
+
+@media (max-width: 600px) {
+  .ewolved__btn_text {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

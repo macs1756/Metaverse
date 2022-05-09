@@ -177,6 +177,14 @@ a{
 	background-color: black;
 	padding: 70px 0 330px 90px;
 	font-family: "Oxanium";
+@media (max-width: 450px) {
+	padding: 70px 0 330px 50px;
+}
+
+
+
+
+
 	li{
 		margin-bottom: 30px;
 	
@@ -219,4 +227,192 @@ a{
 .trans{
 	transition: all 2s linear;
 	transform: translateY(-100%);
+}
+
+.ewolved{
+	padding-bottom: 320px;
+	margin-top: 300px;
+	@media  (max-width: $Tb) {
+		margin-top: 270px;
+		padding-bottom: 260px;
+	}
+	@media  (max-width: $Mb) {
+		margin-top: 140px;
+		padding-bottom: 175px;
+	}
+}
+
+.ewolved__subtitle{
+		font-size: 27px;
+		opacity: 0.7;
+		letter-spacing: 4px;
+		line-height: 110%;
+		margin-left: 175px;
+		font-weight: 600;
+		margin-bottom: 15px;
+
+
+@media  (max-width: $Tb) {
+		font-size: 22px;
+		margin-left: 60px;
+
+}
+@media  (max-width: $Mb) {
+		font-size: 13px;
+		margin-left: 10px;
+		margin-bottom: 8px;
+}
+}
+
+.ewolved__title {
+	font-weight: 900;
+	line-height: 110%;
+	font-size: 146px;
+	margin-left: 175px;
+	margin-bottom: 80px;
+	
+	@media  (max-width: $mini) {
+		font-size: 100px;
+	}
+
+
+	@media  (max-width: $Tb) {
+		font-size: 80px;
+		margin-left: 60px;
+		margin-bottom: 60px;
+
+}
+@media  (max-width: $Mb) {
+		font-size: 40px;
+		margin-left: 10px;
+		margin-bottom: 40px;
+}
+}
+
+
+.ewolved__btn {
+	display: flex;
+	align-items: center;
+	padding-left: 195px;
+	@media  (max-width: $Tb) {
+		padding-left: 80px;
+	}
+	@media  (max-width: $Mb) {
+		padding-left: 20px;
+	}
+}
+
+
+.ewolved__btn_btn {
+	background-color: green;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	margin-right: 16px;
+	border: 1px solid #fff;
+	background: #000 url(../img/Play-icon.svg) 55% 50% no-repeat;
+	position: relative;
+	z-index: 77;
+	@media  (max-width: $Mb) {
+		width: 36px;
+		height: 36px;
+		background-size: 40%;
+
+	}
+
+
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 66px;
+		height: 66px;
+		border-radius: 50%;
+		display: block;
+		background-color:  transparent;
+		border: 1px solid #C5C5C5;
+		z-index: 1;
+		animation: pulse 2s linear infinite normal 0s forwards;
+		@media (max-width: $Mb) {
+				width: 36px;
+				height: 36px;
+				animation: pulse_m 2s linear infinite normal 0s forwards;
+		}
+	}
+	&:before{
+		content: "";
+		
+		width: 66px;
+		height: 66px;
+		border-radius: 50%;
+		display: block;
+		background-color:  transparent;
+		border: 1px solid red;
+		z-index: 1;
+		animation: pulse 2s linear infinite normal 1s forwards;
+		@media (max-width: $Mb) {
+			width: 36px;
+			height: 36px;
+			animation: pulse_m 2s linear infinite normal 1s forwards;
+	}
+	}
+
+	@keyframes pulse {
+					0%{
+						width: 66px;
+						height: 66px;
+						opacity: 1;
+						
+					}
+				
+					100%{
+							transform: scale(2.5);
+							opacity: 0;
+					}
+	}
+
+	@keyframes pulse_m {
+		0%{
+			width: 36px;
+			height: 36px;
+			opacity: 1;
+			
+		}
+	
+		100%{
+				transform: scale(3);
+				opacity: 0;
+		}
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ewolved__btn_text {
+	font-weight: 700;
+	letter-spacing: 4px;
+	line-height: 110%;
+	font-size: 22px;
+	@media  (max-width: $Mb) {
+		font-size: 13px;
+	}
 }
