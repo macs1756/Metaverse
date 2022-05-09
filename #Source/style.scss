@@ -165,3 +165,51 @@ a{
 	}
 
 }
+
+.header__burger__active{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 901;
+	width: 100%;
+	font-size: 30px;
+	background-color: black;
+	padding: 70px 0 70px 90px;
+	font-family: "Oxanium";
+	li{
+		margin-bottom: 30px;
+	
+	}
+	
+	
+}
+
+.header__active__less{
+	position: absolute;
+	top: 55px;
+	right: 45px;
+
+	&:after{
+		content: "";
+		display: block;
+		background-color: red;
+		width: 25px;
+		height: 4px;
+		transform: rotate(45deg);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+	&:before{
+		content: "";
+		display: block;
+		background-color: #fff;
+		width: 25px;
+		height: 4px;
+		transform: rotate(-45deg);
+	}
+
+}
+.active_red{
+	color: red;
+}
