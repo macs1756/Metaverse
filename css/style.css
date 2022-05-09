@@ -115,6 +115,10 @@ header {
 
 a {
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .header {
@@ -314,6 +318,8 @@ a {
 }
 
 .header__burger__active {
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
   position: absolute;
   top: 0;
   left: 0;
@@ -321,7 +327,7 @@ a {
   width: 100%;
   font-size: 30px;
   background-color: black;
-  padding: 70px 0 70px 90px;
+  padding: 70px 0 330px 90px;
   font-family: "Oxanium";
 }
 
@@ -330,6 +336,8 @@ a {
 }
 
 .header__active__less {
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 55px;
   right: 45px;
@@ -360,5 +368,12 @@ a {
 
 .active_red {
   color: red;
+}
+
+.trans {
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 /*# sourceMappingURL=style.css.map */
