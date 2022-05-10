@@ -922,4 +922,12 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+@media (max-width: 400px) {
+  .part_main__item_2, .part_main__item_4 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
 /*# sourceMappingURL=style.css.map */
