@@ -537,3 +537,36 @@ span{
 	padding-right: 10px;
 }
 }
+
+.welcome__colaborative {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 40px;
+	
+}
+.welcome__colaborative_text {
+	max-width: 295px;
+	font-family: 'Fira Sans';
+	font-size: 16px;
+	line-height: 19px;
+letter-spacing: 8px;
+text-transform: uppercase;
+margin-right: 160px;
+@media (max-with: $Mb) {
+		font-size: 13px;
+		letter-spacing: 6px;
+}
+@media (max-width: 600px) {
+	margin-right: 5px;
+}
+}
+
+.welcome__colaborative_addition {
+	img{
+		@media (max-width: 600px) {
+				margin-top: -25px;
+				margin-right: -10px;
+		}
+	}
+}
