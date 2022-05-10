@@ -94,3 +94,15 @@ a{
 	user-select: none;
 }
 
+.title99{
+	font-weight: 800;
+font-size: 80px;
+line-height: 100%;
+text-transform: uppercase;
+@media (max-width: $Tb) {
+	font-size: 45px;
+}
+@media (max-width: $Mb) {
+	font-size: 25px;
+}
+}
