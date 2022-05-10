@@ -627,6 +627,9 @@ margin-right: 160px;
 
 .part_main__item_2, .part_main__item_4 {
 		align-self: flex-end;
+		@media (max-width: 400px) {
+			align-self: start;
+		}
 		
 }
 //////////////////+70px margin>900px//////////////////////
