@@ -633,3 +633,89 @@ margin-right: 160px;
 		
 }
 //////////////////+70px margin>900px//////////////////////
+
+.stade{
+			margin-top: 220px;
+			@media (max-width: 900px) {
+				margin-top: 150px;
+			}
+			@media (max-width: $Tb) {
+				margin-top: 100px;
+			}
+			@media (max-width: $Mb) {
+				margin-top: 100px;
+			}
+
+}
+
+
+
+
+.stade__title{
+		margin-left: 20px;
+		position: relative;
+		margin-bottom: 115px;
+		@media (max-width: $Tb) {
+		margin-bottom: 60px;
+		}
+		@media (max-width: $Mb) {
+				margin-bottom: 40px;
+		}
+		&::before{
+			content: "";
+			display: block;
+			background-color: red;
+			width: 85px;
+			height: 1px;
+			left: 200px;
+			position: absolute;
+			top: -20px;
+			@media (max-width: $Tb) {
+				position: absolute;
+				top: -10px;
+		}
+		@media (max-width: $Mb) {
+			position: absolute;
+			top: -10px;
+			left: 50px;
+	}
+}
+}
+
+.stade__item {
+	max-width: 310px;
+}
+.stade__number {
+	opacity: 0.5;
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 7.33333px;
+	text-transform: uppercase;
+	position: relative;
+	&::before{
+		content: "";
+		display: block;
+		background-color: red;
+		width: 80px;
+		height: 1px;
+		position: absolute;
+		top: 15px;
+		left: 80px;
+	}
+}
+.stade__item__title {	
+font-family: 'Fira Sans';
+font-weight: 800;
+font-size: 28px;
+line-height: 100%;
+text-transform: uppercase;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+.stade__item__p {
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 8px;
+text-transform: uppercase;
+opacity: 0.5;
+}
