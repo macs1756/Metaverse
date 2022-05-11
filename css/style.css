@@ -1095,6 +1095,10 @@ a {
   margin-bottom: 90px;
 }
 
+.partners__title span {
+  color: red;
+}
+
 .partners__title::before {
   content: "";
   display: block;
@@ -1156,5 +1160,9 @@ a {
   letter-spacing: 8px;
   text-transform: uppercase;
   opacity: 0.5;
+}
+
+.roadmap__title span {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

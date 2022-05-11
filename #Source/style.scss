@@ -759,6 +759,9 @@ opacity: 0.5;
 .partners__title{
 	position: relative;
 	margin-bottom: 90px;
+	span{
+		color: red;
+	}
 	&::before{
 		content: "";
 		display: block;
@@ -801,4 +804,17 @@ line-height: 1;
 letter-spacing: 8px;
 text-transform: uppercase;
 opacity: 0.5;
+}
+
+.roadmap{
+	
+}
+
+
+
+
+.roadmap__title{
+	span{
+		color: red;
+	}
 }
