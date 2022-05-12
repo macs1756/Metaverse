@@ -1182,14 +1182,6 @@ img {
 }
 
 @media (max-width: 850px) {
-  .roadmap__first_row {
-    margin: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 850px) {
   .roadmap__img img {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 250px;
@@ -1244,26 +1236,104 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -150px;
-  margin-left: -30px;
 }
 
 @media (max-width: 850px) {
   .roadmap__row {
-    margin: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .roadmap__row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
 .roadmap__item_row {
-  max-width: 100px;
+  max-width: 250px;
 }
 
 @media (max-width: 850px) {
   .roadmap__item_row {
-    max-width: 320px;
     margin: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .roadmap__img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50px;
+            flex: 1 0 50px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .roadmap__item_1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    width: 50%;
+  }
+  .roadmap__first_row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 824px) {
+  .roadmap__first_row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .roadmap__item_3 {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .roadmap__img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .roadmap__item_1, .roadmap__item_3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+    margin-left: -30px;
+  }
+  .roadmap__item_1 {
+    margin-left: -60px;
+  }
+  .roadmap__first_row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
