@@ -140,6 +140,11 @@ a {
   }
 }
 
+source {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 .header {
   padding: 30px 0;
   display: -webkit-box;
