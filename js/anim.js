@@ -4,4 +4,5 @@ const animCard = document.querySelector("#animCard")
 
 anim.addEventListener("click", function(){
 	animCard.classList.toggle("animation");	
+	console.log("click");
 });
