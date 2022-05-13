@@ -2,14 +2,14 @@
 console.log("hallo world");
 
 const burger = document.querySelector("#burger");
-const burger_list = document.querySelector("#burger_list");
-const burger_none = document.querySelector("#burger_none");
+const burgerList = document.querySelector("#burger_list");
+const burgerNone = document.querySelector("#burger_none");
 
 burger.addEventListener("click", function(){
-		burger_list.classList.remove("trans");
+		burgerList.classList.remove("trans");
 });
 
-burger_none.addEventListener("click", function(){
+burgerNone.addEventListener("click", function(){
 	burger_list.classList.add("trans");
 });
 
