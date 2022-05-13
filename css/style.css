@@ -1427,4 +1427,33 @@ footer {
 .wrapper__anime_btn:active {
   background-color: rgba(31, 24, 72, 0.6);
 }
+
+.animation {
+  -webkit-animation: cardAnime 1s linear infitite normal 0s forwards;
+          animation: cardAnime 1s linear infitite normal 0s forwards;
+}
+
+@-webkit-keyframes cardAnime {
+  0% {
+    width: 320px;
+  }
+  50% {
+    width: 1px;
+  }
+  100% {
+    width: 320px;
+  }
+}
+
+@keyframes cardAnime {
+  0% {
+    width: 320px;
+  }
+  50% {
+    width: 1px;
+  }
+  100% {
+    width: 320px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

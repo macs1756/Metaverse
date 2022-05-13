@@ -1011,9 +1011,21 @@ user-select: none;
 &:active{
 	background-color: rgba(31, 24, 72, 0.6);
 }
-	
-	
-	
+}
 
 
+
+.animation{
+	animation: cardAnime 1s linear infitite normal 0s forwards;
+}
+@keyframes cardAnime{
+		0%{
+			width: 320px;
+		}
+		50%{
+			width: 1px;
+		}
+		100%{
+			width: 320px;
+		}
 }
