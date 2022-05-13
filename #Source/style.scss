@@ -974,3 +974,23 @@ text-transform: uppercase;
 opacity: 0.5;
 	}
 }
+
+.wrapper__anime {
+	width: 100%;
+	perspective: 300px;
+}
+.wrapper__anime_card {
+	width: 320px;
+	background-color: -webkit-linear-gradient(180deg, rgb(79, 51, 30), rgb(153, 154, 53), rgb(210, 72, 72));
+	background: -moz-linear-gradient(180deg, rgb(79, 51, 30), rgb(153, 154, 53), rgb(210, 72, 72));
+	background: linear-gradient(180deg, rgb(79, 51, 30), rgb(153, 154, 53), rgb(210, 72, 72));
+	margin: 0 auto;
+	margin-top: 50px;
+	overflow: hidden;
+	border-radius: 10px;
+	height: 500px;
+	img{
+		height: 400px;
+		width: 100%;
+	}
+}

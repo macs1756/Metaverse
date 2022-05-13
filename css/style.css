@@ -1376,4 +1376,27 @@ footer {
   text-transform: uppercase;
   opacity: 0.5;
 }
+
+.wrapper__anime {
+  width: 100%;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.wrapper__anime_card {
+  width: 320px;
+  background-color: -webkit-linear-gradient(180deg, #4f331e, #999a35, #d24848);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4f331e), color-stop(#999a35), to(#d24848));
+  background: linear-gradient(180deg, #4f331e, #999a35, #d24848);
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.wrapper__anime_card img {
+  height: 400px;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
